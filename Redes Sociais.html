@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+	
+	<style>
+	
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1013cb;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.contador-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 30px 50px;
+}
+
+.contador {
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+@media (max-width: 580px) {
+  body {
+    flex-direction: column;
+  }
+}
+	
+	</style>
+	
+    <title>Quantidade de Seguidores</title>
+  </head>
+  <body>
+    <div class="contador-container">
+        <i class="fab fa-twitter fa-3x"></i>
+        <div class="contador" data-target="12000"></div>
+        <span>Seguidores do Twitter</span>
+    </div>
+
+    <div class="contador-container">
+        <i class="fab fa-youtube fa-3x"></i>
+        <div class="contador" data-target="5000"></div>
+        <span>Assinantes do YouTube</span>
+    </div>
+
+    <div class="contador-container">
+        <i class="fab fa-facebook fa-3x"></i>
+        <div class="contador" data-target="7500"></div>
+        <span>Fãs do Facebook</span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
